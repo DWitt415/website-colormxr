@@ -34,7 +34,11 @@ export default function Courses() {
           <p className="mb-0">&nbsp;</p>
           <p className="mb-0">Working from first principles, this is an experiential hands-on eyes-on learning approach that teaches an intuitive way of working with color. Importantly, it is highly approachable for people of all levels, from trained artists + designers to absolute beginners.</p>
           <p className="mb-0">&nbsp;</p>
-          <p>Artists + designers learn new methods that complement what they already know about color, while newcomers learn foundational color literacy and a complete creative color method that enables them to confidently explore and create with color.</p>
+          <p className="mb-0">Artists + designers learn new methods that complement what they already know about color, while newcomers learn foundational color literacy and a complete creative color method that enables them to confidently explore and create with color.</p>
+          <p className="mb-0">&nbsp;</p>
+          <a href="https://icc-landing-tau.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#2c55d2] hover:text-[#f18f02] transition-colors underline">
+            Learn more about Interactive Color Creation &gt;&gt;
+          </a>
         </div>
 
         {/* Header */}
@@ -84,8 +88,8 @@ export default function Courses() {
                       <div className="flex flex-col font-['Open_Sans'] font-normal justify-center leading-[23px] relative shrink-0 text-[#a7d8f7] text-[16px] w-full whitespace-pre-wrap">
                         <p className="mb-0">Created for Artists + Designers, this experiential course teaches constructive color methods for creating color compositions and color palettes</p>
                         <p className="mb-0">&nbsp;</p>
-                        <a href="https://icc-landing-tau.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#a7d8f7] hover:text-[#f18f02] transition-colors">
-                          Learn more &gt;&gt;
+                        <a href="https://colormxr.gumroad.com/l/peuvt" target="_blank" rel="noopener noreferrer" className="text-[#a7d8f7] hover:text-[#f18f02] transition-colors">
+                          View course on Gumroad &gt;&gt;
                         </a>
                       </div>
                     </div>
