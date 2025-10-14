@@ -26,8 +26,8 @@ export default function Alchemy() {
 
       {/* Main Content */}
       <div className="relative pt-[48px]">
-        {/* Alchemy Image */}
-        <div className="absolute h-[395px] left-[889px] top-[57px] w-[636px]">
+        {/* Alchemy Image - Centered in right space */}
+        <div className="absolute h-[395px] top-[57px] w-[636px] z-5" style={{ left: 'calc(716px + (100vw - 716px) / 2)', transform: 'translateX(-50%)' }}>
           <img
             alt="The Alchemy of Color"
             className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full rounded-[8px]"
@@ -35,8 +35,8 @@ export default function Alchemy() {
           />
         </div>
 
-        {/* Description Text */}
-        <div className="absolute font-['Open_Sans'] font-normal leading-[23px] left-[107px] text-[#2b2b2b] text-[16px] top-[264px] w-[563px] whitespace-pre-wrap">
+        {/* Description Text - Centered in left space */}
+        <div className="absolute font-['Open_Sans'] font-normal leading-[23px] text-[#2b2b2b] text-[16px] top-[308px] w-[563px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
           <p className="mb-0">Color is mysterious, elusive, and endlessly surprising.</p>
           <p className="mb-0">&nbsp;</p>
           <p className="mb-0">
@@ -57,8 +57,8 @@ export default function Alchemy() {
           </p>
         </div>
 
-        {/* Header */}
-        <div className="absolute box-border content-stretch flex flex-col font-semibold items-start leading-[52px] left-[75px] pb-[8px] pt-0 px-0 text-center top-[93px] tracking-[-2px] w-[595px] whitespace-pre-wrap">
+        {/* Header - Centered in left space */}
+        <div className="absolute box-border content-stretch flex flex-col font-semibold items-start leading-[52px] pb-[8px] pt-0 px-0 text-center top-[181px] tracking-[-2px] w-[595px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
           <p className="font-['Inter'] not-italic relative shrink-0 text-[#f18f02] text-[48px] w-full">
             The Alchemy of Color
           </p>

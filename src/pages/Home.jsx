@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
 function VideoLink({ className }) {
   return (
@@ -27,9 +26,17 @@ function VideoLink({ className }) {
 
 export default function Home() {
   return (
-    <div className="bg-[#fefefe] relative min-h-screen">
+    <div className="bg-[#fefefe] relative h-screen overflow-hidden">
       <Navbar />
-      <Footer />
+
+      {/* Footer pinned to bottom */}
+      <div className="absolute left-0 bottom-0 w-full z-10">
+        <div className="bg-[#fefefe] h-[61px] w-full flex items-center justify-center">
+          <p className="font-['Open_Sans'] font-light leading-[24px] text-[#5771ff] text-[16px] tracking-[0.2px]">
+            © 2025 David Witt. All rights reserved. Colormxr™
+          </p>
+        </div>
+      </div>
 
       {/* Graphic Background */}
       <div className="absolute h-[945px] left-0 top-0 w-[2065px]">
@@ -40,45 +47,47 @@ export default function Home() {
         />
       </div>
 
-      {/* Main Content */}
-      <div className="absolute h-[241px] left-[114px] top-[752px] w-[467px]">
-        {/* Testimonial */}
-        <div className="absolute font-['Open_Sans'] font-normal h-[205px] italic leading-[normal] left-[668px] text-[#2c55d2] text-[20px] top-[-8px] w-[606px] whitespace-pre-wrap">
-          <p className="mb-0">
-            "Colormxr invites people to work with color in an intuitive way.
-            <br aria-hidden="true" />
-            In a way, it's Albers 2.0 for the digital age. Colormxr allows for a level of experiencing color interaction that is immediate and valuable."
-            <br aria-hidden="true" />
-            <br aria-hidden="true" />
-          </p>
-          <p className="mb-0">Ed Charbonneau</p>
-          <p>Author & Producer of Chromosphere: The Color Theory Podcast</p>
-        </div>
-
-        {/* Body Text */}
-        <div className="absolute font-['Open_Sans'] font-normal h-[342px] leading-[23px] left-0 text-[#2b2b2b] text-[16px] top-0 w-[467px] whitespace-pre-wrap">
-          <p className="mb-0">Forget dry color theory, presets, and canned palettes. With Colormxr, your eye, hand, and mind move together to explore digital color intuitively. See colors interact, experiment in real time, and uncover vivid, surprising, vibrant, and harmonious color relationships and combinations that standard tools can't reveal.</p>
-          <p className="mb-0">&nbsp;</p>
-          <p>Colormxr is a more satisfying and intuitive way to work with digital color using your hand and eye to mix colors and create fine-tuned color combinations, freeing infinite creative possibilities through the interaction of colors.</p>
-        </div>
-
-        {/* Subheading */}
-        <p className="absolute font-['Open_Sans'] font-normal h-[125px] italic leading-[normal] left-[12px] text-[#2c55d2] text-[20px] top-[-137px] w-[467px] whitespace-pre-wrap">
-          A revolutionary, hands-on approach to mixing, exploring, and creating colors—unlocking infinite creative possibilities for artists, designers, and anyone curious about color.
+      {/* Testimonial - Right Side */}
+      <div className="absolute font-['Open_Sans'] font-normal h-[205px] italic leading-[normal] left-[782px] text-[#2c55d2] text-[20px] top-[714px] w-[606px] whitespace-pre-wrap z-5">
+        <p className="mb-0">
+          "Colormxr invites people to work with color in an intuitive way.
+          <br aria-hidden="true" />
+          In a way, it's Albers 2.0 for the digital age. Colormxr allows for a level of experiencing color interaction that is immediate and valuable."
+          <br aria-hidden="true" />
+          <br aria-hidden="true" />
         </p>
-
-        {/* Video Link */}
-        <VideoLink className="absolute block cursor-pointer h-[254px] left-[-49px] overflow-visible top-[-433px] w-[563px]" />
+        <p className="mb-0">Ed Charbonneau</p>
+        <p>Author & Producer of Chromosphere: The Color Theory Podcast</p>
       </div>
 
-      {/* Main Header */}
-      <div className="absolute box-border content-stretch flex flex-col font-semibold items-start leading-[52px] left-[68px] pb-[8px] pt-0 px-0 text-center top-[189px] tracking-[-2px] w-[595px] whitespace-pre-wrap">
+      {/* Video Link */}
+      <VideoLink className="absolute block cursor-pointer h-[254px] left-[65px] overflow-visible top-[319px] w-[563px] z-5" />
+
+      {/* Main Header - Fixed */}
+      <div className="absolute box-border content-stretch flex flex-col font-semibold items-start leading-[52px] left-[68px] pb-[8px] pt-0 px-0 text-center top-[189px] tracking-[-2px] w-[595px] whitespace-pre-wrap z-5">
         <p className="font-['Inter'] not-italic relative shrink-0 text-[#f18f02] text-[48px] w-full">
           Create with Colormxr
         </p>
         <p className="font-['Open_Sans'] relative shrink-0 text-[36px] text-white w-full">
           A digital color tool—and a creative toy
         </p>
+      </div>
+
+      {/* Scrollable Text Content - Below Video */}
+      <div className="absolute left-[114px] top-[565px] w-[467px] h-[calc(100vh-565px-109px)] overflow-y-auto scrollbar-hide z-5">
+        {/* Subheading */}
+        <p className="font-['Open_Sans'] font-normal italic leading-[normal] text-[#2c55d2] text-[20px] w-[467px] whitespace-pre-wrap mb-[30px]">
+          A revolutionary, hands-on approach to mixing, exploring, and creating colors—unlocking infinite creative possibilities for artists, designers, and anyone curious about color.
+        </p>
+
+        {/* Body Text */}
+        <div className="font-['Open_Sans'] font-normal leading-[23px] text-[#2b2b2b] text-[16px] w-[467px] whitespace-pre-wrap">
+			 <p className="mb-0">Colormxr is a more satisfying and intuitive way to work with digital color using your hand and eye to mix colors and create fine-tuned color combinations, freeing infinite creative possibilities through the interaction of colors.</p>
+			 <p className="mb-0">&nbsp;</p>
+          <p>Forget dry color theory, presets, and unituitive color pickers. With Colormxr, your eye, hand, and mind move together to explore digital color intuitively. See colors interact, experiment in real time, and uncover vivid, surprising, vibrant, and harmonious color relationships and combinations that standard tools can't reveal.</p>
+          
+         
+        </div>
       </div>
     </div>
   );

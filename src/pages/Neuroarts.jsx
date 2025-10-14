@@ -26,8 +26,8 @@ export default function Neuroarts() {
 
       {/* Main Content */}
       <div className="relative pt-[48px]">
-        {/* Neuroarts Image */}
-        <div className="absolute h-[375px] left-[846px] top-[131px] w-[648px] z-5">
+        {/* Neuroarts Image - Centered in right space */}
+        <div className="absolute h-[375px] top-[131px] w-[648px] z-5" style={{ left: 'calc(716px + (100vw - 716px) / 2)', transform: 'translateX(-50%)' }}>
           <img
             alt="Colormxr Neuroarts"
             className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
@@ -35,28 +35,28 @@ export default function Neuroarts() {
           />
         </div>
 
-        {/* Quote */}
-        <p className="absolute font-['Open_Sans'] font-normal italic leading-[normal] left-[944px] text-[#2c55d2] text-[20px] top-[630px] w-[529px] whitespace-pre-wrap z-5">
-          Quote
+        {/* Quote - Centered in right space */}
+        <p className="absolute font-['Open_Sans'] font-normal italic leading-[normal] text-[#2c55d2] text-[20px] top-[630px] w-[529px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px + (100vw - 716px) / 2)', transform: 'translateX(-50%)' }}>
+          "Making art is physiologically calming. And the best news is that you don't have to be great, or even good, at making art to experience the benefits."
+          Susan Magsamen and Ivy Ross, Your Brain on Art
         </p>
 
-        {/* Text Content - Scrollable */}
-        <div className="absolute left-[120px] top-[256px] w-[595px] h-[calc(100vh-256px-109px)] overflow-y-auto scrollbar-hide z-5">
-          <div className="relative">
-            {/* Header */}
-            <div className="box-border content-stretch flex flex-col font-semibold items-start leading-[52px] pb-[8px] pt-0 px-0 text-center tracking-[-2px] w-[595px] whitespace-pre-wrap">
-              <p className="font-['Inter'] not-italic relative shrink-0 text-[#f18f02] text-[48px] w-full">
-                Neuroarts
-              </p>
-              <p className="font-['Open_Sans'] relative shrink-0 text-[36px] text-white w-full">
-                Your brain on color
-              </p>
-            </div>
+        {/* Header - Fixed - Centered in left space */}
+        <div className="absolute box-border content-stretch flex flex-col font-semibold items-start leading-[52px] pb-[8px] pt-0 px-0 text-center top-[181px] tracking-[-2px] w-[595px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
+          <p className="font-['Inter'] not-italic relative shrink-0 text-[#f18f02] text-[48px] w-full">
+            Neuroarts
+          </p>
+          <p className="font-['Open_Sans'] relative shrink-0 text-[36px] text-white w-full">
+            Your brain on color
+          </p>
+        </div>
 
-            {/* Body Text */}
-            <div className="font-['Open_Sans'] font-normal leading-[23px] pl-[35px] text-[#2b2b2b] text-[16px] pt-[20px] w-[526px]">
+        {/* Body Text - Scrollable - Centered in left space */}
+        <div className="absolute top-[318px] w-[595px] h-[calc(100vh-318px-109px)] overflow-y-auto scrollbar-hide z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
+          <div className="relative">
+            <div className="font-['Open_Sans'] font-normal leading-[23px] pl-[35px] text-[#2b2b2b] text-[16px] w-[595px]">
             <p className="mb-0">
-              Neuroarts is a new movement in neuroscience studying how creative arts affect brain, body, and behavior, popularized by Susan Magsamen and Ivy Ross in their book{' '}
+              Neuroarts is a growing movement in neuroscience studying how practicing creative arts positively affects your brain, body, and behavior, as popularized by Susan Magsamen and Ivy Ross in their groundbreaking 2022 book{' '}
               <a
                 className="cursor-pointer text-[#f18f02] hover:underline"
                 href="https://yourbrainonart.com"
@@ -67,49 +67,28 @@ export default function Neuroarts() {
               </a>
             </p>
             <p className="mb-0">&nbsp;</p>
-            <p className="mb-0">Interactive Color Creation with Colormxr engages the brain like no other digital color tool—activating both immediate pleasure and deeper cognitive processing.</p>
-            <p className="mb-0">&nbsp;</p>
-            <p className="mb-0">ICCwC is a prime neuroarts creative tool, combining aesthetics, beauty and flow in an experiential artistic practice:</p>
+            <p className="mb-0">Combining Colormxr with Ix Color Creation, yields a prime neuroarts practice, combining aesthetics, beauty and flow in an experiential artistic practice, activating both immediate pleasure and deeper cognitive processing.  Human psychophysical response to Ix Color Creation:</p>
             <p className="mb-0">&nbsp;</p>
 
-            <ol className="list-decimal mb-0 pl-6">
-              <li className="mb-0">
-                <span className="text-[#2c55d2] font-semibold">Sensory Input (Perception)</span>
-                <ul className="list-disc pl-6 mb-0">
-                  <li className="mb-0">Visual cortex processes colors and interactions in real time</li>
-                  <li>Effect: bottom-up stimulation and initial pleasure</li>
-                </ul>
-              </li>
-              <li className="mb-0">
-                <span className="text-[#2c55d2] font-semibold">Reward / Pleasure (Beauty Response)</span>
-                <ul className="list-disc pl-6 mb-0">
-                  <li className="mb-0">Orbitofrontal cortex, ventral striatum, amygdala</li>
-                  <li>Effect: dopamine-driven "wow" moments from harmonious or surprising combinations</li>
-                </ul>
-              </li>
-              <li className="mb-0">
-                <span className="text-[#2c55d2] font-semibold">Cognitive Exploration (Aesthetic Processing)</span>
-                <ul className="list-disc pl-6 mb-0">
-                  <li className="mb-0">Prefrontal cortex, parietal cortex, hippocampus</li>
-                  <li>Effect: top-down evaluation, pattern recognition, and meaning-making</li>
-                </ul>
-              </li>
-              <li className="mb-0">
-                <span className="text-[#2c55d2] font-semibold">Creative Flow & Feedback</span>
-                <ul className="list-disc pl-6">
-                  <li className="mb-0">Interaction of reward + attention networks</li>
-                  <li>Effect: immersive flow state combining learning, pleasure, and self-expression</li>
-                </ul>
-              </li>
-            </ol>
+            <p className="mb-0"><span className="text-[#2c55d2] font-semibold">Sensory Input (Perception)</span></p>
+            <p className="mb-0">Visual cortex processes colors and interactions in real time</p>
+            <p className="mb-0">Effect: bottom-up stimulation and initial pleasure</p>
+            <p className="mb-0"><span className="text-[#2c55d2] font-semibold">Reward / Pleasure (Beauty Response)</span></p>
+            <p className="mb-0">Orbitofrontal cortex, ventral striatum, amygdala</p>
+            <p className="mb-0">Effect: dopamine-driven "wow" moments from harmonious or surprising combinations</p>
+            <p className="mb-0"><span className="text-[#2c55d2] font-semibold">Cognitive Exploration (Aesthetic Processing)</span></p>
+            <p className="mb-0">Prefrontal cortex, parietal cortex, hippocampus</p>
+            <p className="mb-0">Effect: top-down evaluation, pattern recognition, and meaning-making</p>
+            <p className="mb-0"><span className="text-[#2c55d2] font-semibold">Creative Flow & Feedback</span></p>
+            <p className="mb-0">Interaction of reward + attention networks</p>
+            <p className="mb-0">Effect: immersive flow state combining learning, pleasure, and self-expression</p>
 
             <p className="mb-0">&nbsp;</p>
             <p className="mb-0 text-[#2c55d2] font-semibold">Benefits:</p>
-            <ul className="list-disc pl-6 mb-0">
-              <li className="mb-0">Engages perception, reward, cognition, and flow</li>
-              <li className="mb-0">Enhances learning, creativity, and well-being</li>
-              <li>Empowers users to create aesthetic experiences in real time</li>
-            </ul>
+            <p className="mb-0">Engages perception, reward, cognition, and flow</p>
+            <p className="mb-0">Enhances learning, creativity, and well-being</p>
+            <p className="mb-0">Empowers users to create aesthetic experiences in real time</p>
+            <div className="pb-[50px]"></div>
             </div>
           </div>
         </div>

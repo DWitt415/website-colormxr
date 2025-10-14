@@ -1,12 +1,19 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
 export default function Join() {
   return (
-    <div className="relative min-h-screen w-full" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)' }}>
+    <div className="relative h-screen w-full overflow-hidden" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)' }}>
       <Navbar />
-      <Footer />
+
+      {/* Footer pinned to bottom */}
+      <div className="absolute left-0 bottom-0 w-full z-10">
+        <div className="bg-[#fefefe] h-[61px] w-full flex items-center justify-center">
+          <p className="font-['Open_Sans'] font-light leading-[24px] text-[#5771ff] text-[16px] tracking-[0.2px]">
+            © 2025 David Witt. All rights reserved. Colormxr™
+          </p>
+        </div>
+      </div>
 
       {/* Graphic Background */}
       <div className="absolute h-[945px] left-[716px] top-[48px] w-[2065px]">
@@ -19,8 +26,8 @@ export default function Join() {
 
       {/* Main Content */}
       <div className="relative pt-[48px]">
-        {/* Header */}
-        <div className="absolute box-border content-stretch flex flex-col font-semibold items-start leading-[52px] left-[66px] pb-[8px] pt-0 px-0 text-center top-[237px] tracking-[-2px] w-[595px] whitespace-pre-wrap">
+        {/* Header - Centered in left space */}
+        <div className="absolute box-border content-stretch flex flex-col font-semibold items-start leading-[52px] pb-[8px] pt-0 px-0 text-center top-[181px] tracking-[-2px] w-[595px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
           <p className="font-['Inter'] not-italic relative shrink-0 text-[#f18f02] text-[48px] w-full">
             Join the movement
           </p>
@@ -29,8 +36,8 @@ export default function Join() {
           </p>
         </div>
 
-        {/* Body Text */}
-        <div className="absolute font-['Open_Sans'] font-normal leading-[normal] left-[120px] text-[#2b2b2b] text-[16px] top-[396px] w-[488px] whitespace-pre-wrap">
+        {/* Body Text - Centered in left space */}
+        <div className="absolute font-['Open_Sans'] font-normal leading-[normal] text-[#2b2b2b] text-[16px] top-[308px] w-[488px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
           <p className="mb-0">Colormxr is part of a growing creative movement connecting artists, scientists, and educators who believe color can reconnect us to perception itself, and bring creative color play to all people, not just a select few.</p>
           <p className="mb-0">&nbsp;</p>
           <p className="mb-0">Join the movement. Learn. Play. Explore.</p>

@@ -1,15 +1,22 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
 export default function Courses() {
   return (
-    <div className="relative min-h-screen w-full" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)' }}>
+    <div className="relative h-screen w-full overflow-hidden" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)' }}>
       <Navbar />
-      <Footer />
+
+      {/* Footer pinned to bottom */}
+      <div className="absolute left-0 bottom-0 w-full z-10">
+        <div className="bg-[#fefefe] h-[61px] w-full flex items-center justify-center">
+          <p className="font-['Open_Sans'] font-light leading-[24px] text-[#5771ff] text-[16px] tracking-[0.2px]">
+            © 2025 David Witt. All rights reserved. Colormxr™
+          </p>
+        </div>
+      </div>
 
       {/* Graphic Background */}
-      <div className="absolute h-[945px] left-[716px] top-[48px] w-[2065px]">
+      <div className="absolute h-[945px] left-[716px] top-[48px] w-[2065px] z-0">
         <img
           alt="Background gradient"
           className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
@@ -20,7 +27,7 @@ export default function Courses() {
       {/* Main Content */}
       <div className="relative pt-[48px]">
         {/* Classroom Image */}
-        <div className="absolute h-[991px] left-[668px] top-0 w-[1353px]">
+        <div className="absolute h-[991px] left-[716px] top-0 w-[1353px] z-5">
           <img
             alt="Classroom"
             className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
@@ -28,11 +35,11 @@ export default function Courses() {
           />
         </div>
 
-        {/* Description Text */}
-        <div className="absolute font-['Open_Sans'] font-normal leading-[23px] left-[63px] text-[#2b2b2b] text-[16px] top-[162px] w-[488px] whitespace-pre-wrap">
-          <p className="mb-0">Colormxr is based on an entirely new approach to color theory that I've developed as a complete color method and practice, called Interactive Color Creation.</p>
+        {/* Description Text - Centered in left space */}
+        <div className="absolute font-['Open_Sans'] font-normal leading-[23px] text-[#2b2b2b] text-[16px] top-[318px] w-[488px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
+          <p className="mb-0">Colormxr is based on an entirely new approach to color theory that I've developed as a complete color method and practice, called Interactive Color Creation, based on the methods of RGB+CMY colormixing.</p>
           <p className="mb-0">&nbsp;</p>
-          <p className="mb-0">Working from first principles, this is an experiential hands-on eyes-on learning approach that teaches an intuitive way of working with color. Importantly, it is highly approachable for people of all levels, from trained artists + designers to absolute beginners.</p>
+          <p className="mb-0">Working from first principles, this is an experiential hands-on eyes-on learning approach that teaches an intuitive way of working with color, which is highly approachable for people of all levels, from trained artists + designers to absolute beginners.</p>
           <p className="mb-0">&nbsp;</p>
           <p className="mb-0">Artists + designers learn new methods that complement what they already know about color, while newcomers learn foundational color literacy and a complete creative color method that enables them to confidently explore and create with color.</p>
           <p className="mb-0">&nbsp;</p>
@@ -41,8 +48,8 @@ export default function Courses() {
           </a>
         </div>
 
-        {/* Header */}
-        <div className="absolute box-border content-stretch flex flex-col font-semibold items-start leading-[52px] left-0 pb-[8px] pt-0 px-0 text-center top-[41px] tracking-[-2px] w-[595px] whitespace-pre-wrap">
+        {/* Header - Centered in left space */}
+        <div className="absolute box-border content-stretch flex flex-col font-semibold items-start leading-[52px] pb-[8px] pt-0 px-0 text-center top-[181px] tracking-[-2px] w-[595px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
           <p className="font-['Inter'] not-italic relative shrink-0 text-[#f18f02] text-[48px] w-full">
             Color Learning
           </p>
@@ -51,8 +58,8 @@ export default function Courses() {
           </p>
         </div>
 
-        {/* Course Cards */}
-        <div className="absolute box-border content-stretch flex gap-[20px] h-[495px] items-start justify-center left-[466px] px-[60px] py-[40px] top-[433px] w-[1280px]">
+        {/* Course Cards - Centered in right space */}
+        <div className="absolute box-border content-stretch flex gap-[20px] h-[495px] items-start justify-center px-[60px] py-[40px] top-[433px] w-[1280px] z-5" style={{ left: 'calc(716px + (100vw - 716px) / 2)', transform: 'translateX(-50%)' }}>
           {/* Card 1 - Colormixing 101 */}
           <div className="bg-gradient-to-b from-[#898989] h-[340px] relative rounded-[16px] shrink-0 to-[rgba(35,35,35,0.36)] w-[272px]">
             <div className="content-stretch flex flex-col h-[340px] items-center justify-center overflow-clip relative rounded-[inherit] w-[272px]">
