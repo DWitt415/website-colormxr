@@ -31,7 +31,7 @@ export default function Courses() {
           <img
             alt="Classroom"
             className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-            src="/assets/classroom.png"
+            src="/assets/classroom.jpg"
           />
         </div>
 
