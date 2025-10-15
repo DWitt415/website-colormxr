@@ -9,7 +9,7 @@ export default function Alchemy() {
       {/* Footer pinned to bottom */}
       <div className="absolute left-0 bottom-0 w-full z-10">
         <div className="bg-[#fefefe] h-[61px] w-full flex items-center justify-center">
-          <p className="font-['Open_Sans'] font-light leading-[24px] text-[#5771ff] text-[16px] tracking-[0.2px]">
+          <p className="footer-text">
             © 2025 David Witt. All rights reserved. Colormxr™
           </p>
         </div>
@@ -36,7 +36,7 @@ export default function Alchemy() {
         </div>
 
         {/* Description Text - Centered in left space */}
-        <div className="absolute font-['Open_Sans'] font-normal leading-[23px] text-[#2b2b2b] text-[16px] top-[308px] w-[563px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
+        <div className="absolute body-text top-[308px] w-[563px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
           <p className="mb-0">Color is mysterious, elusive, and endlessly surprising.</p>
           <p className="mb-0">&nbsp;</p>
           <p className="mb-0">
@@ -58,11 +58,11 @@ export default function Alchemy() {
         </div>
 
         {/* Header - Centered in left space */}
-        <div className="absolute box-border content-stretch flex flex-col font-semibold items-start leading-[52px] pb-[8px] pt-0 px-0 text-center top-[181px] tracking-[-2px] w-[595px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
-          <p className="font-['Inter'] not-italic relative shrink-0 text-[#f18f02] text-[48px] w-full">
+        <div className="absolute box-border content-stretch flex flex-col font-semibold items-start pb-[8px] pt-0 px-0 text-center top-[181px] w-[595px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
+          <p className="heading-hero relative shrink-0 w-full">
             The Alchemy of Color
           </p>
-          <p className="font-['Open_Sans'] relative shrink-0 text-[36px] text-white w-full">
+          <p className="heading-subhero relative shrink-0 w-full">
             Thoughts on the mysteries of color
           </p>
         </div>

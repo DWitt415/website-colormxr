@@ -43,7 +43,7 @@ export default function Gallery() {
       {/* Footer pinned to bottom */}
       <div className="absolute left-0 bottom-0 w-full z-10">
         <div className="bg-[#fefefe] h-[61px] w-full flex items-center justify-center">
-          <p className="font-['Open_Sans'] font-light leading-[24px] text-[#5771ff] text-[16px] tracking-[0.2px]">
+          <p className="footer-text">
             © 2025 David Witt. All rights reserved. Colormxr™
           </p>
         </div>
@@ -71,10 +71,10 @@ export default function Gallery() {
         <div className="flex gap-[190px] items-start pl-[307px] pr-[190px] pt-[127px]">
           {/* Title Card */}
           <div className="h-[553px] relative shrink-0 w-[595px] flex flex-col items-center justify-center">
-            <div className="font-['Inter'] font-semibold leading-[52px] not-italic text-[48px] text-center tracking-[-2px] whitespace-nowrap mb-[14px]">
-              <p className="mb-0 text-[#f18f02]">Colormxr Gallery</p>
+            <div className="heading-hero text-center whitespace-nowrap mb-[14px]">
+              <p className="mb-0">Colormxr Gallery</p>
             </div>
-            <p className="font-['Open_Sans'] font-normal leading-[23px] text-[#2b2b2b] text-[16px] text-center">
+            <p className="body-text text-center">
               Select examples of  color compositions made with Colormxr
             </p>
           </div>

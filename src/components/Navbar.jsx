@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="content-stretch flex items-center justify-between relative shrink-0 w-[1539px]">
         {/* Logo */}
         <Link to="/" className="h-[36px] relative shrink-0 w-[313px]">
-          <p className="absolute bottom-[17.75%] font-['Open_Sans'] font-semibold leading-[24px] left-[14.38%] right-0 text-[0px] text-[18px] text-white top-[15.58%]">
+          <p className="absolute bottom-[17.75%] nav-logo left-[14.38%] right-0 text-[0px] top-[15.58%]">
             <span className="text-[#939393]">
               Colormxr
             </span>
@@ -92,37 +92,37 @@ export default function Navbar() {
         <div className="content-stretch flex gap-[10px] h-[48px] items-center justify-end overflow-clip relative shrink-0">
           <div className="content-stretch cursor-pointer flex gap-[11px] items-center overflow-clip relative shrink-0">
             <Link to="/app" className="box-border content-stretch flex gap-[10px] items-center overflow-clip p-[10px] relative shrink-0">
-              <p className="font-['Inter'] font-semibold leading-[24px] not-italic relative shrink-0 text-[#939393] text-[16px] text-center tracking-[-0.32px]">
+              <p className="nav-link relative shrink-0">
                 Colormxr
               </p>
             </Link>
             <Link to="/gallery" className="box-border content-stretch flex gap-[10px] items-center overflow-clip p-[10px] relative shrink-0">
-              <p className="font-['Inter'] font-semibold leading-[24px] not-italic relative shrink-0 text-[#939393] text-[16px] text-center tracking-[-0.32px]">
+              <p className="nav-link relative shrink-0">
                 Gallery
               </p>
             </Link>
             <Link to="/courses" className="box-border content-stretch flex gap-[10px] items-center overflow-clip p-[10px] relative shrink-0">
-              <p className="font-['Inter'] font-semibold leading-[24px] not-italic relative shrink-0 text-[#939393] text-[16px] text-center tracking-[-0.32px]">
+              <p className="nav-link relative shrink-0">
                 Color Learning
               </p>
             </Link>
             <Link to="/neuroarts" className="box-border content-stretch flex gap-[10px] items-center overflow-clip p-[10px] relative shrink-0">
-              <p className="font-['Inter'] font-semibold leading-[24px] not-italic relative shrink-0 text-[#939393] text-[16px] text-center tracking-[-0.32px]">
+              <p className="nav-link relative shrink-0">
                 Neuroarts
               </p>
             </Link>
             <Link to="/journey" className="box-border content-stretch flex gap-[10px] items-center overflow-clip p-[10px] relative shrink-0">
-              <p className="font-['Inter'] font-semibold leading-[24px] not-italic relative shrink-0 text-[#939393] text-[16px] text-center tracking-[-0.32px]">
+              <p className="nav-link relative shrink-0">
                 My Journey
               </p>
             </Link>
             <Link to="/alchemy" className="box-border content-stretch flex gap-[10px] items-center overflow-clip p-[10px] relative shrink-0">
-              <p className="font-['Inter'] font-semibold leading-[24px] not-italic relative shrink-0 text-[#939393] text-[16px] text-center tracking-[-0.32px]">
+              <p className="nav-link relative shrink-0">
                 The Alchemy of Color
               </p>
             </Link>
             <Link to="/join" className="box-border content-stretch flex gap-[10px] items-center overflow-clip p-[10px] relative shrink-0">
-              <p className="font-['Inter'] font-semibold leading-[24px] not-italic relative shrink-0 text-[#939393] text-[16px] text-center tracking-[-0.32px]">
+              <p className="nav-link relative shrink-0">
                 Join The Movement
               </p>
             </Link>

@@ -9,7 +9,7 @@ export default function Courses() {
       {/* Footer pinned to bottom */}
       <div className="absolute left-0 bottom-0 w-full z-10">
         <div className="bg-[#fefefe] h-[61px] w-full flex items-center justify-center">
-          <p className="font-['Open_Sans'] font-light leading-[24px] text-[#5771ff] text-[16px] tracking-[0.2px]">
+          <p className="footer-text">
             © 2025 David Witt. All rights reserved. Colormxr™
           </p>
         </div>
@@ -36,7 +36,7 @@ export default function Courses() {
         </div>
 
         {/* Description Text - Centered in left space */}
-        <div className="absolute font-['Open_Sans'] font-normal leading-[23px] text-[#2b2b2b] text-[16px] top-[318px] w-[488px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
+        <div className="absolute body-text top-[318px] w-[488px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
           <p className="mb-0">Colormxr is based on an entirely new approach to color theory that I've developed as a complete color method and practice, called Interactive Color Creation, based on the methods of RGB+CMY colormixing.</p>
           <p className="mb-0">&nbsp;</p>
           <p className="mb-0">Working from first principles, this is an experiential hands-on eyes-on learning approach that teaches an intuitive way of working with color, which is highly approachable for people of all levels, from trained artists + designers to absolute beginners.</p>
@@ -49,11 +49,11 @@ export default function Courses() {
         </div>
 
         {/* Header - Centered in left space */}
-        <div className="absolute box-border content-stretch flex flex-col font-semibold items-start leading-[52px] pb-[8px] pt-0 px-0 text-center top-[181px] tracking-[-2px] w-[595px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
-          <p className="font-['Inter'] not-italic relative shrink-0 text-[#f18f02] text-[48px] w-full">
+        <div className="absolute box-border content-stretch flex flex-col font-semibold items-start pb-[8px] pt-0 px-0 text-center top-[181px] w-[595px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
+          <p className="heading-hero relative shrink-0 w-full">
             Color Learning
           </p>
-          <p className="font-['Open_Sans'] relative shrink-0 text-[36px] text-white w-full">
+          <p className="heading-subhero relative shrink-0 w-full">
             An entirely new approach
           </p>
         </div>
@@ -67,10 +67,10 @@ export default function Courses() {
                 <div className="size-full">
                   <div className="box-border content-stretch flex flex-col gap-[32px] items-start p-[24px] relative w-full">
                     <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] relative shrink-0 w-full">
-                      <div className="flex flex-col font-['Inter'] font-bold justify-center not-italic relative shrink-0 text-[#f18f02] text-[30px] tracking-[-0.6px] w-full">
+                      <div className="heading-section flex flex-col justify-center relative shrink-0 w-full">
                         <p className="leading-[38px] whitespace-pre-wrap">Colormixing 101</p>
                       </div>
-                      <div className="flex flex-col font-['Open_Sans'] font-normal justify-center leading-[1.45] relative shrink-0 text-[#a7d8f7] text-[18px] tracking-[-0.09px] w-full whitespace-pre-wrap">
+                      <div className="body-text-large text-light-blue flex flex-col justify-center relative shrink-0 w-full whitespace-pre-wrap">
                         <p className="mb-[16px]">A free foundational course that introduces Colormxr and the basics of RGB + CMY colormixing.</p>
                         <p>Learn more &gt;&gt;</p>
                       </div>
@@ -89,10 +89,10 @@ export default function Courses() {
                 <div className="size-full">
                   <div className="box-border content-stretch flex flex-col gap-[32px] items-start p-[24px] relative w-full">
                     <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] relative shrink-0 w-full">
-                      <div className="flex flex-col font-['Inter'] font-bold justify-center not-italic relative shrink-0 text-[#f18f02] text-[30px] tracking-[-0.6px] w-full">
+                      <div className="heading-section flex flex-col justify-center relative shrink-0 w-full">
                         <p className="leading-[38px] whitespace-pre-wrap">Interactive Color Creation - level 1</p>
                       </div>
-                      <div className="flex flex-col font-['Open_Sans'] font-normal justify-center leading-[23px] relative shrink-0 text-[#a7d8f7] text-[16px] w-full whitespace-pre-wrap">
+                      <div className="body-text text-light-blue flex flex-col justify-center relative shrink-0 w-full whitespace-pre-wrap">
                         <p className="mb-0">Created for Artists + Designers, this experiential course teaches constructive color methods for creating color compositions and color palettes</p>
                         <p className="mb-0">&nbsp;</p>
                         <a href="https://colormxr.gumroad.com/l/peuvt" target="_blank" rel="noopener noreferrer" className="text-[#a7d8f7] hover:text-[#f18f02] transition-colors">
@@ -114,10 +114,10 @@ export default function Courses() {
                 <div className="size-full">
                   <div className="box-border content-stretch flex flex-col gap-[32px] items-start p-[24px] relative w-full">
                     <div className="content-stretch flex flex-col gap-[8px] items-start leading-[0] relative shrink-0 w-full">
-                      <div className="flex flex-col font-['Inter'] font-bold justify-center not-italic relative shrink-0 text-[#f18f02] text-[30px] tracking-[-0.6px] w-full">
+                      <div className="heading-section flex flex-col justify-center relative shrink-0 w-full">
                         <p className="leading-[38px] whitespace-pre-wrap">Discovering Color with Colormxr</p>
                       </div>
-                      <div className="flex flex-col font-['Open_Sans'] font-normal justify-center leading-[23px] relative shrink-0 text-[#a7d8f7] text-[16px] w-full whitespace-pre-wrap">
+                      <div className="body-text text-light-blue flex flex-col justify-center relative shrink-0 w-full whitespace-pre-wrap">
                         <p className="mb-0">Designed for all people, this course teaches the same methods, while exploring color psychology with a neuroarts approach.</p>
                         <p>Learn more &gt;&gt;</p>
                       </div>
