@@ -34,15 +34,15 @@ export default function Home() {
             {/* Body Content */}
             <section className="space-y-6">
               <p className="subheading-blue">
-                Colormxr is a new, human-centered way to work with digital color—part tool, part toy—that lets you mix, explore, and create color compositions intuitively with your eyes and hands.
+                A revolutionary, hands-on approach to mixing, exploring, and creating colors—unlocking infinite creative possibilities for artists, designers, and anyone curious about color.
               </p>
 
               <div className="body-text space-y-4">
                 <p>
-                  Built on the principles of Interactive Color Creation, Colormxr teaches color literacy through play, blending art, design, and neuroarts.
+                  <span className="font-semibold">Colormxr</span> is a new, human-centered way to work with digital color—part tool, part toy—that lets you mix, explore, and create color compositions intuitively with your eyes and hands.
                 </p>
                 <p>
-                  Discover the flow of color interaction, unlock your creative potential, and experience the joy of seeing color in motion.
+                  Built on the principles of <span className="font-semibold">Interactive Color Creation</span>, Colormxr teaches color literacy through play, blending art, design, and neuroarts. Discover the flow of color interaction, unlock your creative potential, and experience the joy of seeing color in motion.
                 </p>
               </div>
             </section>
@@ -86,9 +86,9 @@ export default function Home() {
             </div>
 
             {/* Left Side Content */}
-            <div className="absolute left-[68px] top-[100px] w-[595px] space-y-8 z-10">
+            <div className="absolute left-[68px] top-[181px] w-[595px] space-y-8 z-10">
               {/* Header */}
-              <div className="text-center space-y-2">
+              <div className="text-center pb-[8px]">
                 <h1 className="heading-hero">
                   Create with Colormxr
                 </h1>
@@ -121,10 +121,10 @@ export default function Home() {
 
                 <div className="body-text space-y-4">
                   <p>
-                    Colormxr is a more satisfying and intuitive way to work with digital color using your hand and eye to mix colors and create fine-tuned color combinations, freeing infinite creative possibilities through the interaction of colors.
+                    <span className="font-semibold">Colormxr</span> is a new, human-centered way to work with digital color—part tool, part toy—that lets you mix, explore, and create color compositions intuitively with your eyes and hands.
                   </p>
                   <p>
-                    Forget dry color theory, presets, and unituitive color pickers. With Colormxr, your eye, hand, and mind move together to explore digital color intuitively. See colors interact, experiment in real time, and uncover vivid, surprising, vibrant, and harmonious color relationships and combinations that standard tools can't reveal.
+                    Built on the principles of <span className="font-semibold">Interactive Color Creation</span>, Colormxr teaches color literacy through play, blending art, design, and neuroarts. Discover the flow of color interaction, unlock your creative potential, and experience the joy of seeing color in motion.
                   </p>
                 </div>
               </div>

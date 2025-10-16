@@ -106,9 +106,9 @@ export default function About() {
           </div>
 
           {/* Left Side Content */}
-          <div className="absolute left-[68px] top-[100px] w-[595px] z-10" style={{ height: 'calc(100vh - 220px)' }}>
+          <div className="absolute left-[68px] top-[181px] w-[595px] z-10" style={{ height: 'calc(100vh - 301px)' }}>
             {/* Header */}
-            <div className="text-center space-y-2">
+            <div className="text-center pb-[8px]">
               <h1 className="heading-hero">
                 What is Colormxr?
               </h1>
