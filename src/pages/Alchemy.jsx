@@ -10,8 +10,56 @@ export default function Alchemy() {
       <main className="flex-1 lg:overflow-hidden overflow-y-auto overflow-x-hidden">
 
         {/* Mobile/Tablet Layout: Single Column */}
-        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 py-8 max-w-[1400px]">
-          <p className="text-center text-gray-600">Mobile layout coming soon...</p>
+        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 py-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
+
+          {/* Hero Image */}
+          <div className="w-full rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="/assets/alchemy-image.png"
+              alt="The Alchemy of Color"
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Hero Section */}
+          <section className="text-center">
+            <h1 className="heading-hero mb-[2px]">
+              The Alchemy of Color
+            </h1>
+            <h2 className="heading-subhero">
+              Thoughts on the mysteries of color
+            </h2>
+          </section>
+
+          {/* Body Content */}
+          <section className="body-text space-y-4">
+            <p>Color is mysterious, elusive, and endlessly surprising.</p>
+
+            <p>
+              On <span className="text-[#f18f02]">The Alchemy of Color</span>, I write about the art, science, and psychology of color—sharing insights from my practice, experiments, and teaching.
+            </p>
+
+            <p>
+              Visit{' '}
+              <a
+                className="cursor-pointer text-[#f18f02] hover:underline"
+                href="http://thealchemyofcolor.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The Alchemy of Color
+              </a>
+              {' '}to explore and learn more.
+            </p>
+          </section>
+
+          {/* Quote */}
+          <section className="subheading-blue space-y-3 py-4">
+            <p className="italic">
+              "With color one obtains an energy that seems to stem from witchcraft."
+            </p>
+            <p className="not-italic font-semibold">-Henri Matisse</p>
+          </section>
         </div>
 
         {/* Desktop Layout: Original Split Design */}
@@ -28,13 +76,15 @@ export default function Alchemy() {
 
           {/* Main Content */}
           <div className="relative pt-[48px]">
-            {/* Alchemy Image - Centered in right space */}
-            <div className="absolute h-[395px] top-[57px] w-[636px] z-5" style={{ left: 'calc(716px + (100vw - 716px) / 2)', transform: 'translateX(-50%)' }}>
-              <img
-                alt="The Alchemy of Color"
-                className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full rounded-[8px]"
-                src="/assets/alchemy-image.png"
-              />
+            {/* Alchemy Image Container */}
+            <div className="absolute z-5" style={{ left: '716px', top: '48px', height: '490px', width: 'calc(100vw - 716px)' }}>
+              <div className="flex items-center justify-center h-full">
+                <img
+                  alt="The Alchemy of Color"
+                  className="w-[636px] h-auto rounded-[8px]"
+                  src="/assets/alchemy-image.png"
+                />
+              </div>
             </div>
 
             {/* Description Text - Centered in left space */}
@@ -67,6 +117,16 @@ export default function Alchemy() {
               <p className="heading-subhero mb-0">
                 Thoughts on the mysteries of color
               </p>
+            </div>
+
+            {/* Quote - Centered in right space */}
+            <div className="absolute w-[529px] z-10" style={{ left: 'calc(716px + (100vw - 716px) / 2)', transform: 'translateX(-50%)', top: '650px' }}>
+              <div className="subheading-blue space-y-3">
+                <p className="italic">
+                  "With color one obtains an energy that seems to stem from witchcraft."
+                </p>
+                <p className="not-italic font-semibold">-Henri Matisse</p>
+              </div>
             </div>
           </div>
 

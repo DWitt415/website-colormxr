@@ -68,7 +68,7 @@ export default function Join() {
       <main className="flex-1 lg:overflow-hidden overflow-y-auto overflow-x-hidden">
 
         {/* Mobile/Tablet Layout: Single Column */}
-        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 py-8 max-w-[1400px]">
+        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 pt-8 pb-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 64px)', paddingTop: '80px' }}>
           <div className="text-center">
             <h1 className="heading-hero">
               Connect + Collaborate

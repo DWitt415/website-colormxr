@@ -10,8 +10,84 @@ export default function Neuroarts() {
       <main className="flex-1 lg:overflow-hidden overflow-y-auto overflow-x-hidden">
 
         {/* Mobile/Tablet Layout: Single Column */}
-        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 py-8 max-w-[1400px]">
-          <p className="text-center text-gray-600">Mobile layout coming soon...</p>
+        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 py-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
+
+          {/* Hero Image */}
+          <div className="w-full">
+            <img
+              src="/assets/colormxr-neuro.png"
+              alt="Colormxr Neuroarts"
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Hero Section */}
+          <section className="text-center">
+            <h1 className="heading-hero mb-[2px]">
+              Neuroarts
+            </h1>
+            <h2 className="heading-subhero">
+              Your brain on color
+            </h2>
+          </section>
+
+          {/* Body Content */}
+          <section className="body-text space-y-4">
+            <p>
+              Neuroarts is a growing movement in neuroscience studying how practicing creative arts positively affects your brain, body, and behavior, as popularized by Susan Magsamen and Ivy Ross in their groundbreaking 2022 book{' '}
+              <a
+                className="cursor-pointer text-[#f18f02] hover:underline"
+                href="https://yourbrainonart.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Your Brain on Art.
+              </a>
+            </p>
+
+            <p>Combining Colormxr with Ix Color Creation, yields a prime neuroarts practice, combining aesthetics, beauty and flow in an experiential artistic practice, activating both immediate pleasure and deeper cognitive processing. Human psychophysical response to Ix Color Creation:</p>
+
+            <div className="space-y-3">
+              <div>
+                <p className="text-[#2c55d2] font-semibold mb-1">Sensory Input (Perception)</p>
+                <p className="mb-1">Visual cortex processes colors and interactions in real time</p>
+                <p>Effect: bottom-up stimulation and initial pleasure</p>
+              </div>
+
+              <div>
+                <p className="text-[#2c55d2] font-semibold mb-1">Reward / Pleasure (Beauty Response)</p>
+                <p className="mb-1">Orbitofrontal cortex, ventral striatum, amygdala</p>
+                <p>Effect: dopamine-driven "wow" moments from harmonious or surprising combinations</p>
+              </div>
+
+              <div>
+                <p className="text-[#2c55d2] font-semibold mb-1">Cognitive Exploration (Aesthetic Processing)</p>
+                <p className="mb-1">Prefrontal cortex, parietal cortex, hippocampus</p>
+                <p>Effect: top-down evaluation, pattern recognition, and meaning-making</p>
+              </div>
+
+              <div>
+                <p className="text-[#2c55d2] font-semibold mb-1">Creative Flow & Feedback</p>
+                <p className="mb-1">Interaction of reward + attention networks</p>
+                <p>Effect: immersive flow state combining learning, pleasure, and self-expression</p>
+              </div>
+            </div>
+
+            <div>
+              <p className="text-[#2c55d2] font-semibold mb-2">Benefits:</p>
+              <p className="mb-1">Engages perception, reward, cognition, and flow</p>
+              <p className="mb-1">Enhances learning, creativity, and well-being</p>
+              <p>Empowers users to create aesthetic experiences in real time</p>
+            </div>
+          </section>
+
+          {/* Quote */}
+          <section className="subheading-blue py-4">
+            <p>
+              "Making art is physiologically calming. And the best news is that you don't have to be great, or even good, at making art to experience the benefits."
+            </p>
+            <p className="mt-2">Susan Magsamen and Ivy Ross, Your Brain on Art</p>
+          </section>
         </div>
 
         {/* Desktop Layout: Original Split Design */}
@@ -28,13 +104,15 @@ export default function Neuroarts() {
 
           {/* Main Content */}
           <div className="relative pt-[48px]">
-            {/* Neuroarts Image - Centered in right space */}
-            <div className="absolute h-[375px] top-[131px] w-[648px] z-5" style={{ left: 'calc(716px + (100vw - 716px) / 2)', transform: 'translateX(-50%)' }}>
-              <img
-                alt="Colormxr Neuroarts"
-                className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-                src="/assets/colormxr-neuro.png"
-              />
+            {/* Neuroarts Image Container */}
+            <div className="absolute z-5" style={{ left: '716px', top: '48px', height: '490px', width: 'calc(100vw - 716px)' }}>
+              <div className="flex items-center justify-center h-full">
+                <img
+                  alt="Colormxr Neuroarts"
+                  className="w-[648px] h-auto"
+                  src="/assets/colormxr-neuro.png"
+                />
+              </div>
             </div>
 
             {/* Quote - Centered in right space */}

@@ -44,9 +44,69 @@ export default function Gallery() {
       <main className="flex-1 lg:overflow-hidden overflow-y-auto overflow-x-hidden">
 
         {/* Mobile/Tablet Layout */}
-        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 py-8 max-w-[1400px]">
-          {/* Mobile content will go here */}
-          <p className="text-center text-gray-500">Mobile layout coming soon...</p>
+        <div className="lg:hidden flex flex-col container mx-auto px-5 py-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
+
+          {/* First Gallery Image */}
+          <div className="w-full shadow-lg">
+            <img
+              alt="Color composition 1"
+              className="w-full h-auto"
+              src="/assets/gallery-1.png"
+            />
+          </div>
+
+          {/* Hero Section */}
+          <section className="text-center mt-[40px] mb-[200px]">
+              <h1 className="heading-hero mb-[2px]">
+                Colormxr Gallery
+              </h1>
+              <h2 className="heading-subhero">
+                Select examples of color compositions made with Colormxr
+              </h2>
+          </section>
+
+          {/* Remaining Gallery Images */}
+          <section className="flex flex-col gap-[200px]">
+            <div className="w-full shadow-lg">
+              <img
+                alt="Color composition 2"
+                className="w-full h-auto"
+                src="/assets/gallery-2.png"
+              />
+            </div>
+
+            <div className="w-full shadow-lg">
+              <img
+                alt="Color composition 3"
+                className="w-full h-auto"
+                src="/assets/gallery-3.png"
+              />
+            </div>
+
+            <div className="w-full shadow-lg">
+              <img
+                alt="Color composition 4"
+                className="w-full h-auto"
+                src="/assets/gallery-4.png"
+              />
+            </div>
+
+            <div className="w-full shadow-lg">
+              <img
+                alt="Color composition 5"
+                className="w-full h-auto"
+                src="/assets/gallery-5.png"
+              />
+            </div>
+
+            <div className="w-full shadow-lg">
+              <img
+                alt="Color composition 6"
+                className="w-full h-auto"
+                src="/assets/gallery-6.png"
+              />
+            </div>
+          </section>
         </div>
 
         {/* Desktop Layout - Horizontal Scrolling Gallery */}
@@ -73,12 +133,12 @@ export default function Gallery() {
             <div className="flex gap-[190px] items-center pl-[307px] pr-[190px] h-full">
               {/* Title Card */}
               <div className="h-[553px] w-[595px] flex flex-col items-center justify-center shrink-0">
-                <h1 className="heading-hero text-center mb-4">
+                <h1 className="heading-hero text-center mb-0">
                   Colormxr Gallery
                 </h1>
-                <p className="body-text text-center">
+                <h2 className="heading-subhero text-center">
                   Select examples of color compositions made with Colormxr
-                </p>
+                </h2>
               </div>
 
               {/* Gallery Images */}

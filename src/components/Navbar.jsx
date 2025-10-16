@@ -4,8 +4,8 @@ import MobileMenu from './MobileMenu';
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 bg-[#ededed] w-full">
-      <div className="container mx-auto px-4 xl:px-5 flex items-center justify-between h-16 xl:h-auto xl:py-2">
+    <nav className="fixed top-0 z-50 w-full" style={{ background: 'linear-gradient(90deg, #e7e7e7 0%, #e4e4e4 100%)' }}>
+      <div className="container mx-auto px-4 xl:px-5 flex items-center justify-between xl:h-auto xl:py-2" style={{ height: '54px' }}>
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 flex-shrink-0">
           {/* Logo Icon */}
