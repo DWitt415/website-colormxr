@@ -37,98 +37,112 @@ export default function Gallery() {
   };
 
   return (
-    <div className="relative h-screen w-full overflow-hidden" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)' }}>
+    <div className="min-h-screen bg-[#fefefe] flex flex-col overflow-x-hidden">
       <Navbar />
 
-      {/* Footer pinned to bottom */}
-      <div className="absolute left-0 bottom-0 w-full z-10">
-        <div className="bg-[#fefefe] h-[61px] w-full flex items-center justify-center">
+      {/* Main Content */}
+      <main className="flex-1 lg:overflow-hidden overflow-y-auto overflow-x-hidden">
+
+        {/* Mobile/Tablet Layout */}
+        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 py-8 max-w-[1400px]">
+          {/* Mobile content will go here */}
+          <p className="text-center text-gray-500">Mobile layout coming soon...</p>
+        </div>
+
+        {/* Desktop Layout - Horizontal Scrolling Gallery */}
+        <div className="hidden lg:block relative" style={{ height: 'calc(100vh - 120px)' }}>
+          {/* Fixed Background */}
+          <div className="fixed left-0 top-0 w-[2058px] h-[886px] pointer-events-none z-0">
+            <img
+              alt="Background gradient"
+              className="w-full h-full object-cover object-left-top"
+              src="/assets/bg-grad-1.jpg"
+            />
+          </div>
+
+          {/* Scrollable Gallery Content */}
+          <div
+            ref={scrollRef}
+            className="relative overflow-x-auto overflow-y-hidden h-full scrollbar-hide cursor-grab select-none z-10"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            onMouseDown={handleMouseDown}
+            onMouseLeave={handleMouseLeave}
+            onMouseUp={handleMouseUp}
+            onMouseMove={handleMouseMove}
+          >
+            <div className="flex gap-[190px] items-center pl-[307px] pr-[190px] h-full">
+              {/* Title Card */}
+              <div className="h-[553px] w-[595px] flex flex-col items-center justify-center shrink-0">
+                <h1 className="heading-hero text-center mb-4">
+                  Colormxr Gallery
+                </h1>
+                <p className="body-text text-center">
+                  Select examples of color compositions made with Colormxr
+                </p>
+              </div>
+
+              {/* Gallery Images */}
+              <div className="h-[514px] w-[893px] shrink-0">
+                <img
+                  alt="Color composition 1"
+                  className="w-full h-full object-cover"
+                  src="/assets/gallery-1.png"
+                />
+              </div>
+
+              <div className="h-[514px] w-[895px] shrink-0">
+                <img
+                  alt="Color composition 2"
+                  className="w-full h-full object-cover"
+                  src="/assets/gallery-2.png"
+                />
+              </div>
+
+              <div className="h-[514px] w-[894px] shrink-0">
+                <img
+                  alt="Color composition 3"
+                  className="w-full h-full object-cover"
+                  src="/assets/gallery-3.png"
+                />
+              </div>
+
+              <div className="h-[514px] w-[895px] shrink-0">
+                <img
+                  alt="Color composition 4"
+                  className="w-full h-full object-cover"
+                  src="/assets/gallery-4.png"
+                />
+              </div>
+
+              <div className="h-[515px] w-[896px] shrink-0">
+                <img
+                  alt="Color composition 5"
+                  className="w-full h-full object-cover"
+                  src="/assets/gallery-5.png"
+                />
+              </div>
+
+              <div className="h-[507px] w-[889px] shrink-0">
+                <img
+                  alt="Color composition 6"
+                  className="w-full h-full object-cover"
+                  src="/assets/gallery-6.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-[#fefefe] py-2 lg:absolute lg:bottom-0 lg:w-full">
+        <div className="container mx-auto px-5 text-center">
           <p className="footer-text">
             © 2025 David Witt. All rights reserved. Colormxr™
           </p>
         </div>
-      </div>
-
-      {/* Fixed Graphic Background */}
-      <div className="fixed h-[886px] left-0 top-0 w-[2058px] pointer-events-none z-0">
-        <img
-          alt="Background gradient"
-          className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-          src="/assets/bg-grad-1.jpg"
-        />
-      </div>
-
-      {/* Scrollable Gallery Content */}
-      <div
-        ref={scrollRef}
-        className="relative pt-[48px] pb-[100px] overflow-x-auto overflow-y-hidden z-10 scrollbar-hide cursor-grab select-none"
-        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        onMouseDown={handleMouseDown}
-        onMouseLeave={handleMouseLeave}
-        onMouseUp={handleMouseUp}
-        onMouseMove={handleMouseMove}
-      >
-        <div className="flex gap-[190px] items-start pl-[307px] pr-[190px] pt-[127px]">
-          {/* Title Card */}
-          <div className="h-[553px] relative shrink-0 w-[595px] flex flex-col items-center justify-center">
-            <div className="heading-hero text-center whitespace-nowrap mb-[14px]">
-              <p className="mb-0">Colormxr Gallery</p>
-            </div>
-            <p className="body-text text-center">
-              Select examples of  color compositions made with Colormxr
-            </p>
-          </div>
-
-          {/* Gallery Images */}
-          <div className="h-[514px] relative shrink-0 w-[893px]">
-            <img
-              alt="Color composition 1"
-              className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-              src="/assets/gallery-1.png"
-            />
-          </div>
-
-          <div className="h-[514px] relative shrink-0 w-[895px]">
-            <img
-              alt="Color composition 2"
-              className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-              src="/assets/gallery-2.png"
-            />
-          </div>
-
-          <div className="h-[514px] relative shrink-0 w-[894px]">
-            <img
-              alt="Color composition 3"
-              className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-              src="/assets/gallery-3.png"
-            />
-          </div>
-
-          <div className="h-[514px] relative shrink-0 w-[895px]">
-            <img
-              alt="Color composition 4"
-              className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-              src="/assets/gallery-4.png"
-            />
-          </div>
-
-          <div className="h-[515px] relative shrink-0 w-[896px]">
-            <img
-              alt="Color composition 5"
-              className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-              src="/assets/gallery-5.png"
-            />
-          </div>
-
-          <div className="h-[507px] relative shrink-0 w-[889px]">
-            <img
-              alt="Color composition 6"
-              className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-              src="/assets/gallery-6.png"
-            />
-          </div>
-        </div>
-      </div>
+      </footer>
     </div>
   );
 }

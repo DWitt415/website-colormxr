@@ -33,31 +33,77 @@ body {
     font-family: 'Open Sans', sans-serif;
   }
 
-  /* Heading Styles */
+  /* Heading Styles - Mobile First */
   .heading-hero {
     font-family: 'Inter', sans-serif;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 600;
-    line-height: 52px;
-    letter-spacing: -2px;
+    line-height: 38px;
+    letter-spacing: -1.5px;
     color: #f18f02;
+  }
+
+  @media (min-width: 768px) {
+    .heading-hero {
+      font-size: 40px;
+      line-height: 46px;
+      letter-spacing: -1.8px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .heading-hero {
+      font-size: 48px;
+      line-height: 52px;
+      letter-spacing: -2px;
+    }
   }
 
   .heading-subhero {
     font-family: 'Open Sans', sans-serif;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 600;
-    line-height: 52px;
-    letter-spacing: -2px;
+    line-height: 32px;
+    letter-spacing: -1px;
     color: #ffffff;
+  }
+
+  @media (min-width: 768px) {
+    .heading-subhero {
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: -1.5px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .heading-subhero {
+      font-size: 36px;
+      line-height: 52px;
+      letter-spacing: -2px;
+    }
   }
 
   .heading-section {
     font-family: 'Inter', sans-serif;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.5px;
     color: #f18f02;
+  }
+
+  @media (min-width: 768px) {
+    .heading-section {
+      font-size: 28px;
+      letter-spacing: -0.55px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .heading-section {
+      font-size: 30px;
+      letter-spacing: -0.6px;
+    }
   }
 
   /* Body Text Styles */
