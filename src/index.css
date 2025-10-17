@@ -41,7 +41,7 @@ body {
     line-height: 34px;
     letter-spacing: -1.32px;
     color: #f18f02;
-    margin-bottom: -5px;
+    margin-bottom: 0px;
   }
 
   @media (min-width: 1024px) {
