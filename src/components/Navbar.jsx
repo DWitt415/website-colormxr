@@ -22,10 +22,10 @@ export default function Navbar() {
             <span className="text-[18px] font-semibold text-[#939393] whitespace-nowrap">
               Colormxr
             </span>
-            <span className="text-[18px] font-light text-[#bfbfbf]">
+            <span className="hidden sm:inline text-[18px] font-light text-[#bfbfbf]">
               |
             </span>
-            <span className="text-[18px] font-light text-[#5d83ff] whitespace-nowrap">
+            <span className="hidden sm:inline text-[18px] font-light text-[#5d83ff] whitespace-nowrap">
               Interactive color play
             </span>
           </div>
