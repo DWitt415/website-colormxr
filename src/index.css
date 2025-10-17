@@ -36,21 +36,37 @@ body {
   /* Heading Styles - Mobile First */
   .heading-hero {
     font-family: 'Inter', sans-serif;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 600;
-    line-height: 52px;
-    letter-spacing: -2px;
+    line-height: 34px;
+    letter-spacing: -1.32px;
     color: #f18f02;
     margin-bottom: -5px;
   }
 
+  @media (min-width: 1024px) {
+    .heading-hero {
+      font-size: 48px;
+      line-height: 52px;
+      letter-spacing: -2px;
+    }
+  }
+
   .heading-subhero {
     font-family: 'Open Sans', sans-serif;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 600;
-    line-height: 52px;
-    letter-spacing: -2px;
+    line-height: 34px;
+    letter-spacing: -1.32px;
     color: #ffffff;
+  }
+
+  @media (min-width: 1024px) {
+    .heading-subhero {
+      font-size: 36px;
+      line-height: 52px;
+      letter-spacing: -2px;
+    }
   }
 
   .heading-section {
