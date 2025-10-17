@@ -10,7 +10,7 @@ export default function Neuroarts() {
       <main className="flex-1 lg:overflow-hidden overflow-y-auto overflow-x-hidden">
 
         {/* Mobile/Tablet Layout: Single Column */}
-        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 py-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
+        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 pt-20 pb-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
 
           {/* Hero Image */}
           <div className="w-full">
@@ -22,8 +22,8 @@ export default function Neuroarts() {
           </div>
 
           {/* Hero Section */}
-          <section className="text-center">
-            <h1 className="heading-hero mb-[2px]">
+          <section className="text-left">
+            <h1 className="heading-hero">
               Neuroarts
             </h1>
             <h2 className="heading-subhero">
@@ -34,7 +34,7 @@ export default function Neuroarts() {
           {/* Body Content */}
           <section className="body-text space-y-4">
             <p>
-              Neuroarts is a growing movement in neuroscience studying how practicing creative arts positively affects your brain, body, and behavior, as popularized by Susan Magsamen and Ivy Ross in their groundbreaking 2022 book{' '}
+              Neuroarts is a growing movement in neuroscience studying how practicing creative arts positively affects your brain, body, and behavior, as popularized by Susan Magsamen and Ivy Ross in their breakthrough 2022 book{' '}
               <a
                 className="cursor-pointer text-[#f18f02] hover:underline"
                 href="https://yourbrainonart.com"
@@ -82,11 +82,13 @@ export default function Neuroarts() {
           </section>
 
           {/* Quote */}
-          <section className="subheading-blue py-4">
-            <p>
+          <section className="subheading-blue space-y-3 py-4">
+            <p className="italic">
               "Making art is physiologically calming. And the best news is that you don't have to be great, or even good, at making art to experience the benefits."
             </p>
-            <p className="mt-2">Susan Magsamen and Ivy Ross, Your Brain on Art</p>
+            <div className="not-italic">
+              <p>—Susan Magsamen and Ivy Ross</p>
+            </div>
           </section>
         </div>
 
@@ -116,10 +118,16 @@ export default function Neuroarts() {
             </div>
 
             {/* Quote - Centered in right space */}
-            <p className="absolute subheading-blue top-[630px] w-[529px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px + (100vw - 716px) / 2)', transform: 'translateX(-50%)' }}>
-              "Making art is physiologically calming. And the best news is that you don't have to be great, or even good, at making art to experience the benefits."
-              Susan Magsamen and Ivy Ross, Your Brain on Art
-            </p>
+            <div className="absolute top-[630px] w-[529px] z-5" style={{ left: 'calc(716px + (100vw - 716px) / 2)', transform: 'translateX(-50%)' }}>
+              <div className="subheading-blue space-y-3">
+                <p className="italic">
+                  "Making art is physiologically calming. And the best news is that you don't have to be great, or even good, at making art to experience the benefits."
+                </p>
+                <div className="not-italic">
+                  <p>—Susan Magsamen and Ivy Ross</p>
+                </div>
+              </div>
+            </div>
 
             {/* Header - Fixed - Centered in left space */}
             <div className="absolute text-center top-[181px] w-[595px] z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>

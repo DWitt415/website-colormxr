@@ -10,7 +10,7 @@ export default function Courses() {
       <main className="flex-1 lg:overflow-hidden overflow-y-auto overflow-x-hidden">
 
         {/* Mobile/Tablet Layout: Single Column */}
-        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 py-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
+        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 pt-20 pb-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
 
           {/* Hero Image */}
           <div className="w-full rounded-lg overflow-hidden shadow-lg">
@@ -22,8 +22,8 @@ export default function Courses() {
           </div>
 
           {/* Hero Section */}
-          <section className="text-center">
-            <h1 className="heading-hero mb-[2px]">
+          <section className="text-left">
+            <h1 className="heading-hero">
               Interactive Color Creation
             </h1>
             <h2 className="heading-subhero">
@@ -52,8 +52,7 @@ export default function Courses() {
               "This is a great sandbox for playing with color and helps you understand color in a simple but intuitive way."
             </p>
             <div className="not-italic">
-              <p className="font-semibold mb-1">Pertti Kainulainen</p>
-              <p className="text-sm">Course Graduate</p>
+              <p>—Pertti Kainulainen</p>
             </div>
           </section>
         </div>
@@ -111,8 +110,7 @@ export default function Courses() {
                   "This is a great sandbox for playing with color and helps you understand color in a simple but intuitive way."
                 </p>
                 <div className="not-italic">
-                  <p className="font-semibold">Pertti Kainulainen</p>
-                  <p className="text-sm">Course Graduate</p>
+                  <p>—Pertti Kainulainen</p>
                 </div>
               </div>
             </div>

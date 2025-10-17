@@ -10,7 +10,7 @@ export default function About() {
       <main className="flex-1 lg:overflow-hidden overflow-y-auto overflow-x-hidden">
 
         {/* Mobile/Tablet Layout: Single Column */}
-        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 py-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
+        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 pt-20 pb-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
 
           {/* Hero Image */}
           <div className="w-full">
@@ -22,8 +22,8 @@ export default function About() {
           </div>
 
           {/* Hero Section */}
-          <section className="text-center">
-            <h1 className="heading-hero mb-[2px]">
+          <section className="text-left">
+            <h1 className="heading-hero">
               What is Colormxr?
             </h1>
             <h2 className="heading-subhero">
@@ -84,12 +84,12 @@ export default function About() {
 
           {/* Testimonial */}
           <section className="subheading-blue space-y-3 py-4">
-            <p className="mb-2">"Colormxr is like a fidget toy for digital artists + designers!"</p>
-            <p className="not-italic">
-              -Margarita T.
-              <br />
-              Course graduate
+            <p className="italic">
+              "Colormxr is like a fidget toy for digital artists + designers!"
             </p>
+            <div className="not-italic">
+              <p>—Margarita T.</p>
+            </div>
           </section>
         </div>
 
@@ -183,13 +183,13 @@ export default function About() {
 
           {/* Right Side - Testimonial */}
           <div className="absolute top-[550px] w-[529px] z-10" style={{ left: 'calc(716px + (100vw - 716px) / 2)', transform: 'translateX(-50%)' }}>
-            <div className="subheading-blue">
-              <p className="mb-2">"Colormxr is like a fidget toy for digital artists + designers!"</p>
-              <p className="not-italic">
-                -Margarita T.
-                <br />
-                Course graduate
+            <div className="subheading-blue space-y-3">
+              <p className="italic">
+                "Colormxr is like a fidget toy for digital artists + designers!"
               </p>
+              <div className="not-italic">
+                <p>—Margarita T.</p>
+              </div>
             </div>
           </div>
         </div>

@@ -44,7 +44,7 @@ export default function Gallery() {
       <main className="flex-1 lg:overflow-hidden overflow-y-auto overflow-x-hidden">
 
         {/* Mobile/Tablet Layout */}
-        <div className="lg:hidden flex flex-col container mx-auto px-5 py-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
+        <div className="lg:hidden flex flex-col container mx-auto px-5 pt-20 pb-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
 
           {/* First Gallery Image */}
           <div className="w-full shadow-lg">
@@ -56,8 +56,8 @@ export default function Gallery() {
           </div>
 
           {/* Hero Section */}
-          <section className="text-center mt-[40px] mb-[200px]">
-              <h1 className="heading-hero mb-[2px]">
+          <section className="text-left mt-[40px] mb-[200px]">
+              <h1 className="heading-hero">
                 Colormxr Gallery
               </h1>
               <h2 className="heading-subhero">

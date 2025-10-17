@@ -5,27 +5,27 @@ import MobileMenu from './MobileMenu';
 export default function Navbar() {
   return (
     <nav className="fixed top-0 z-50 w-full" style={{ background: 'linear-gradient(90deg, #e7e7e7 0%, #e4e4e4 100%)' }}>
-      <div className="container mx-auto px-4 xl:px-5 flex items-center justify-between xl:h-auto xl:py-2" style={{ height: '54px' }}>
+      <div className="w-full px-5 xl:container xl:mx-auto xl:px-5 flex items-center justify-between xl:h-auto xl:py-2" style={{ height: '54px' }}>
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 flex-shrink-0">
           {/* Logo Icon */}
-          <div className="relative size-[35px] max-sm:size-[30px] flex-shrink-0">
+          <div className="relative size-[35px] flex-shrink-0">
             <img
               alt="Colormxr logo"
               className="w-full h-full object-contain"
-              src="/assets/logo-bg.png"
+              src="/assets/Colormxr-logo.svg"
             />
           </div>
 
           {/* Logo Text */}
           <div className="flex items-center gap-2 flex-shrink-0">
-            <span className="text-[18px] max-sm:text-[14px] font-semibold text-[#939393] whitespace-nowrap">
+            <span className="text-[18px] font-semibold text-[#939393] whitespace-nowrap">
               Colormxr
             </span>
-            <span className="hidden sm:inline text-[18px] max-sm:text-[14px] font-light text-[#bfbfbf]">
+            <span className="text-[18px] font-light text-[#bfbfbf]">
               |
             </span>
-            <span className="hidden sm:inline text-[18px] font-light text-[#5d83ff] whitespace-nowrap">
+            <span className="text-[18px] font-light text-[#5d83ff] whitespace-nowrap">
               Interactive color play
             </span>
           </div>

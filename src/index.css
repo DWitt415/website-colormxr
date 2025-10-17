@@ -36,52 +36,21 @@ body {
   /* Heading Styles - Mobile First */
   .heading-hero {
     font-family: 'Inter', sans-serif;
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 600;
-    line-height: 38px;
-    letter-spacing: -1.5px;
+    line-height: 52px;
+    letter-spacing: -2px;
     color: #f18f02;
-  }
-
-  @media (min-width: 768px) {
-    .heading-hero {
-      font-size: 40px;
-      line-height: 46px;
-      letter-spacing: -1.8px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .heading-hero {
-      font-size: 48px;
-      line-height: 52px;
-      letter-spacing: -2px;
-    }
+    margin-bottom: -5px;
   }
 
   .heading-subhero {
     font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 600;
-    line-height: 32px;
-    letter-spacing: -1px;
+    line-height: 52px;
+    letter-spacing: -2px;
     color: #ffffff;
-  }
-
-  @media (min-width: 768px) {
-    .heading-subhero {
-      font-size: 30px;
-      line-height: 40px;
-      letter-spacing: -1.5px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .heading-subhero {
-      font-size: 36px;
-      line-height: 52px;
-      letter-spacing: -2px;
-    }
   }
 
   .heading-section {
@@ -109,10 +78,16 @@ body {
   /* Body Text Styles */
   .body-text {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 23px;
     color: #2b2b2b;
+  }
+
+  @media (min-width: 1024px) {
+    .body-text {
+      font-size: 16px;
+    }
   }
 
   .body-text-large {
@@ -126,10 +101,16 @@ body {
   /* Subheading & Callout Text */
   .subheading-blue {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     font-style: italic;
     color: #2c55d2;
+  }
+
+  @media (min-width: 1024px) {
+    .subheading-blue {
+      font-size: 20px;
+    }
   }
 
   .subheading-bold {
@@ -168,11 +149,17 @@ body {
   /* Footer & Small Text */
   .footer-text {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0.2px;
     color: #5771ff;
+  }
+
+  @media (min-width: 1024px) {
+    .footer-text {
+      font-size: 16px;
+    }
   }
 
   /* Light Text Variant */

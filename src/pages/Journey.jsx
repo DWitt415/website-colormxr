@@ -10,7 +10,7 @@ export default function Journey() {
       <main className="flex-1 lg:overflow-hidden overflow-y-auto overflow-x-hidden">
 
         {/* Mobile/Tablet Layout: Single Column */}
-        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 py-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
+        <div className="lg:hidden flex flex-col gap-8 container mx-auto px-5 pt-20 pb-8 max-w-[1400px]" style={{ background: 'linear-gradient(180deg, #EDEDED 5.37%, #EBEBE9 15.71%, #EDECEA 72.93%, #F9F9F8 86.3%, #FEFEFE 94.77%)', minHeight: 'calc(100vh - 120px)' }}>
 
           {/* Hero Image */}
           <div className="w-full rounded-lg overflow-hidden shadow-lg">
@@ -22,8 +22,8 @@ export default function Journey() {
           </div>
 
           {/* Hero Section */}
-          <section className="text-center">
-            <h1 className="heading-hero mb-[2px]">
+          <section className="text-left">
+            <h1 className="heading-hero">
               My color journey
             </h1>
             <h2 className="heading-subhero">
@@ -42,11 +42,13 @@ export default function Journey() {
 
           {/* Quote */}
           <section className="subheading-blue space-y-3 py-4">
-            <p>"As humans, we are captivated by color, and the moments when it breaks out of the ordinary and dazzles us with its appearance.</p>
-            <p>
+            <p className="italic">"As humans, we are captivated by color, and the moments when it breaks out of the ordinary and dazzles us with its appearance.</p>
+            <p className="italic">
               As an artist + designer, my dream was to capture this appearance in my own work, to work with color in a fluid and expressive way. Inspired by the work and teachings of Josef Albers, I wanted to create a new way to work with digital color fluidly, mixing colors with the same ease and intent shown by the great color masters. Years of synthesis and refinement have produced a truly paradigm-shifting experience that I am delighted to share with you!"
             </p>
-            <p className="not-italic">-David</p>
+            <div className="not-italic">
+              <p>—David</p>
+            </div>
           </section>
         </div>
 
@@ -79,12 +81,14 @@ export default function Journey() {
 
             {/* Quote - Below Image */}
             <div className="absolute z-5" style={{ left: 'calc(716px + (100vw - 716px) / 2)', transform: 'translateX(-50%)', top: '615px', width: '608px' }}>
-              <div className="subheading-blue whitespace-pre-wrap">
-                <p className="mb-0">"As humans, we are captivated by color, and the moments when it breaks out of the ordinary and dazzles us with its appearance.</p>
-                <p className="mb-0">
+              <div className="subheading-blue space-y-3 whitespace-pre-wrap">
+                <p className="italic mb-0">"As humans, we are captivated by color, and the moments when it breaks out of the ordinary and dazzles us with its appearance.</p>
+                <p className="italic mb-0">
                   As an artist + designer, my dream was to capture this appearance in my own work, to work with color in a fluid and expressive way. Inspired by the work and teachings of Josef Albers, I wanted to create a new way to work with digital color fluidly, mixing colors with the same ease and intent shown by the great color masters. Years of synthesis and refinement have produced a truly paradigm-shifting experience that I am delighted to share with you!"
                 </p>
-                <p>-David</p>
+                <div className="not-italic">
+                  <p>—David</p>
+                </div>
               </div>
             </div>
 

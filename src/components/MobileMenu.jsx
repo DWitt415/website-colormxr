@@ -17,7 +17,7 @@ export default function MobileMenu() {
       {/* Hamburger Button */}
       <button
         onClick={toggleMenu}
-        className="xl:hidden relative z-40 p-2 text-[#939393] hover:text-[#5771ff] transition-colors"
+        className="xl:hidden relative z-40 text-[#939393] hover:text-[#5771ff] transition-colors"
         aria-label="Toggle menu"
         aria-expanded={isOpen}
       >
