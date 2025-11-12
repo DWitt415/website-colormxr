@@ -51,7 +51,7 @@ export default function Gallery() {
             <img
               alt="Color composition 1"
               className="w-full h-auto"
-              src="/assets/gallery-1.png"
+              src="/assets/Gallery/gallery-1.png"
             />
           </div>
 
@@ -71,7 +71,7 @@ export default function Gallery() {
               <img
                 alt="Color composition 2"
                 className="w-full h-auto"
-                src="/assets/gallery-2.png"
+                src="/assets/Gallery/gallery-2.png"
               />
             </div>
 
@@ -79,7 +79,7 @@ export default function Gallery() {
               <img
                 alt="Color composition 3"
                 className="w-full h-auto"
-                src="/assets/gallery-3.png"
+                src="/assets/Gallery/gallery-3.png"
               />
             </div>
 
@@ -87,7 +87,7 @@ export default function Gallery() {
               <img
                 alt="Color composition 4"
                 className="w-full h-auto"
-                src="/assets/gallery-4.png"
+                src="/assets/Gallery/gallery-4.png"
               />
             </div>
 
@@ -95,7 +95,7 @@ export default function Gallery() {
               <img
                 alt="Color composition 5"
                 className="w-full h-auto"
-                src="/assets/gallery-5.png"
+                src="/assets/Gallery/gallery-5.png"
               />
             </div>
 
@@ -103,7 +103,63 @@ export default function Gallery() {
               <img
                 alt="Color composition 6"
                 className="w-full h-auto"
-                src="/assets/gallery-6.png"
+                src="/assets/Gallery/gallery-6.png"
+              />
+            </div>
+
+            <div className="w-full shadow-lg">
+              <img
+                alt="Color composition 7"
+                className="w-full h-auto"
+                src="/assets/Gallery/gallery-7.png"
+              />
+            </div>
+
+            <div className="w-full shadow-lg">
+              <img
+                alt="Color composition 8"
+                className="w-full h-auto"
+                src="/assets/Gallery/gallery-8.png"
+              />
+            </div>
+
+            <div className="w-full shadow-lg">
+              <img
+                alt="Color composition 9"
+                className="w-full h-auto"
+                src="/assets/Gallery/gallery-9.png"
+              />
+            </div>
+
+            <div className="w-full shadow-lg">
+              <img
+                alt="Color composition 10"
+                className="w-full h-auto"
+                src="/assets/Gallery/gallery-10.png"
+              />
+            </div>
+
+            <div className="w-full shadow-lg">
+              <img
+                alt="Color composition 11"
+                className="w-full h-auto"
+                src="/assets/Gallery/gallery-11.png"
+              />
+            </div>
+
+            <div className="w-full shadow-lg">
+              <img
+                alt="Color composition 12"
+                className="w-full h-auto"
+                src="/assets/Gallery/gallery-12.png"
+              />
+            </div>
+
+            <div className="w-full shadow-lg">
+              <img
+                alt="Color composition 13"
+                className="w-full h-auto"
+                src="/assets/Gallery/gallery-13.png"
               />
             </div>
           </section>
@@ -146,7 +202,7 @@ export default function Gallery() {
                 <img
                   alt="Color composition 1"
                   className="w-full h-full object-cover"
-                  src="/assets/gallery-1.png"
+                  src="/assets/Gallery/gallery-1.png"
                 />
               </div>
 
@@ -154,7 +210,7 @@ export default function Gallery() {
                 <img
                   alt="Color composition 2"
                   className="w-full h-full object-cover"
-                  src="/assets/gallery-2.png"
+                  src="/assets/Gallery/gallery-2.png"
                 />
               </div>
 
@@ -162,7 +218,7 @@ export default function Gallery() {
                 <img
                   alt="Color composition 3"
                   className="w-full h-full object-cover"
-                  src="/assets/gallery-3.png"
+                  src="/assets/Gallery/gallery-3.png"
                 />
               </div>
 
@@ -170,7 +226,7 @@ export default function Gallery() {
                 <img
                   alt="Color composition 4"
                   className="w-full h-full object-cover"
-                  src="/assets/gallery-4.png"
+                  src="/assets/Gallery/gallery-4.png"
                 />
               </div>
 
@@ -178,7 +234,7 @@ export default function Gallery() {
                 <img
                   alt="Color composition 5"
                   className="w-full h-full object-cover"
-                  src="/assets/gallery-5.png"
+                  src="/assets/Gallery/gallery-5.png"
                 />
               </div>
 
@@ -186,7 +242,63 @@ export default function Gallery() {
                 <img
                   alt="Color composition 6"
                   className="w-full h-full object-cover"
-                  src="/assets/gallery-6.png"
+                  src="/assets/Gallery/gallery-6.png"
+                />
+              </div>
+
+              <div className="h-[514px] w-[894px] shrink-0">
+                <img
+                  alt="Color composition 7"
+                  className="w-full h-full object-cover"
+                  src="/assets/Gallery/gallery-7.png"
+                />
+              </div>
+
+              <div className="h-[514px] w-[895px] shrink-0">
+                <img
+                  alt="Color composition 8"
+                  className="w-full h-full object-cover"
+                  src="/assets/Gallery/gallery-8.png"
+                />
+              </div>
+
+              <div className="h-[514px] w-[893px] shrink-0">
+                <img
+                  alt="Color composition 9"
+                  className="w-full h-full object-cover"
+                  src="/assets/Gallery/gallery-9.png"
+                />
+              </div>
+
+              <div className="h-[514px] w-[895px] shrink-0">
+                <img
+                  alt="Color composition 10"
+                  className="w-full h-full object-cover"
+                  src="/assets/Gallery/gallery-10.png"
+                />
+              </div>
+
+              <div className="h-[514px] w-[894px] shrink-0">
+                <img
+                  alt="Color composition 11"
+                  className="w-full h-full object-cover"
+                  src="/assets/Gallery/gallery-11.png"
+                />
+              </div>
+
+              <div className="h-[514px] w-[895px] shrink-0">
+                <img
+                  alt="Color composition 12"
+                  className="w-full h-full object-cover"
+                  src="/assets/Gallery/gallery-12.png"
+                />
+              </div>
+
+              <div className="h-[514px] w-[894px] shrink-0">
+                <img
+                  alt="Color composition 13"
+                  className="w-full h-full object-cover"
+                  src="/assets/Gallery/gallery-13.png"
                 />
               </div>
             </div>
