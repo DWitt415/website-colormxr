@@ -46,6 +46,20 @@ export default function Courses() {
             </p>
           </section>
 
+          {/* Video Embed */}
+          <section className="w-full">
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute inset-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/A9jAzC9dK-o"
+                title="Introducing Colormxr"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </section>
+
           {/* Testimonial */}
           <section className="subheading-blue space-y-3 py-4">
             <p className="italic">
@@ -81,7 +95,7 @@ export default function Courses() {
             </div>
 
             {/* Description Text - Centered in left space */}
-            <div className="absolute body-text top-[318px] w-[488px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
+            <div className="absolute body-text top-[513px] w-[488px] whitespace-pre-wrap z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)' }}>
               <p className="mb-0">Colormxr is based on an entirely new approach to color theory that I've developed as a complete color method and practice, called Interactive Color Creation, based on the methods of RGB+CMY colormixing.</p>
               <p className="mb-0">&nbsp;</p>
               <p className="mb-0">Working from first principles, this is an experiential hands-on eyes-on learning approach that teaches an intuitive way of working with color, which is highly approachable for people of all levels, from trained artists + designers to absolute beginners.</p>
@@ -101,6 +115,22 @@ export default function Courses() {
               <p className="heading-subhero relative shrink-0 w-full">
                 An entirely new approach
               </p>
+            </div>
+
+            {/* Video */}
+            <div className="absolute z-5" style={{ left: 'calc(716px / 2)', transform: 'translateX(-50%)', top: '290px' }}>
+              <a
+                href="https://youtu.be/A9jAzC9dK-o"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <img
+                  alt="Colormxr video preview"
+                  className="w-[354px] h-[203px] rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                  src="/assets/screenshot-video.png"
+                />
+              </a>
             </div>
 
             {/* Testimonial - Overlay on classroom image */}

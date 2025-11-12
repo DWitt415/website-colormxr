@@ -52,7 +52,7 @@ export default function Home() {
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
                   className="absolute inset-0 w-full h-full rounded-lg"
-                  src="https://www.youtube.com/embed/A9jAzC9dK-o"
+                  src="https://www.youtube.com/embed/SgcyNpSM89M"
                   title="Introducing Colormxr"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -100,7 +100,7 @@ export default function Home() {
               {/* Video */}
               <div className="flex justify-center">
                 <a
-                  href="https://youtu.be/A9jAzC9dK-o"
+                  href="https://youtu.be/SgcyNpSM89M"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
@@ -108,7 +108,7 @@ export default function Home() {
                   <img
                     alt="Colormxr video preview"
                     className="w-[354px] h-[203px] rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-                    src="/assets/screenshot-video.png"
+                    src="/assets/colormxr-video-thumbnail.png"
                   />
                 </a>
               </div>

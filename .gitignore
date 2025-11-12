@@ -95,3 +95,6 @@ temp/
 *.njsproj
 *.sln
 *.sw?
+
+# Colormxr studio files
+public/Gallery/
