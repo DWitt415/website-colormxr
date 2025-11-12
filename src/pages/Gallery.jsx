@@ -61,7 +61,7 @@ export default function Gallery() {
                 Colormxr Gallery
               </h1>
               <h2 className="heading-subhero">
-                Select examples of color compositions made with Colormxr
+                A few examples of color compositions made with Colormxr
               </h2>
           </section>
 
@@ -193,7 +193,7 @@ export default function Gallery() {
                   Colormxr Gallery
                 </h1>
                 <h2 className="heading-subhero text-center">
-                  Select examples of color compositions made with Colormxr
+                  A few examples of color compositions made with Colormxr
                 </h2>
               </div>
 
